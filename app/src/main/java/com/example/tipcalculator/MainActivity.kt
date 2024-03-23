@@ -119,20 +119,7 @@ fun TipCalculator(){
             )
     }
 }
-@Composable
-fun editText(
-    value: String,
-    onValuechanged:(String)->Unit,
-    label:String,
-    keyboardOptions: KeyboardOptions
 
-){
-    OutlinedTextField(value = value, onValueChange =onValuechanged,
-        label = { Text(text = label)},
-        modifier = Modifier.padding(5.dp,40.dp,15.dp,5.dp),
-        keyboardOptions = keyboardOptions
-    )
-}
 @VisibleForTesting
 fun calculate(
     amount: Double,
